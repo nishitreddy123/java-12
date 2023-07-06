@@ -1,4 +1,4 @@
-FROM maven:3.5.4-jdk-8-alpine as build
+FROM maven:3.2-onbuild as build
 copy ./pom.xml ./pom.xml
 copy ./src ./src
 RUN mvn pacakage
