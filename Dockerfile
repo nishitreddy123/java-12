@@ -4,6 +4,6 @@ RUN mvn dependency:go-offiline
 copy ./src ./src
 RUN mvn pacakage -Dskiptestsu
 FROM openjdk:8-jdk
-WORKDIR  /app1.0
+WORKDIR  /app1.1
 copy --from=build target/sample-*.jar ./sample.jar
 cmd ["java","-jar","./sample.jar"]
