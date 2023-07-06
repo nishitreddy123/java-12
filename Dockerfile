@@ -1,4 +1,4 @@
-FROM maven:3.8.4-openjdk-8-slim AS mavem_build
+FROM maven:3.8.4-openjdk-8-slim AS maven_build
 WORKDIR / app
 copy pom.xml .
 run mvn dependency:go-offline
