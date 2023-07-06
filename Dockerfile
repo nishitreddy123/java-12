@@ -1,5 +1,4 @@
-FROM maven:3.8.4-openjdk-8-slim AS maven_build
-WORKDIR / app
+FROM maven:3.5.4-jdk-8-alpine as build
 copy ./pom.xml ./pom.xml
 copy ./src ./src
 run mvn pacakage 
